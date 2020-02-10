@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    margin:0 auto;
+    padding: 40px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.brandlogo {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    padding-right: 0.5rem;
+           
+}
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    
+    
+}
+.navbar-links li a {
+    margin: 0;
+    padding: 1rem;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    
+}
+.toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar {
+    height: 3px;
+    width: 100px;
+    background-color: white;
+    border: radius 10px;
+    
+}
+
+@media (max-width: 600px) {
+    .toggle-button {
+        display:flex;
+        
+    }
+    .navbar-links {
+       width: 100%;
+       display:none;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li { 
+        text-align: center;
+        margin: 15px
+    }
+    .navbar-links li a {
+        text-align: center;
+        padding: 2rem 1rem;
+        
+    }
+    .navbar-links.active {
+        display:flex;
+    }
+}
+
+.main-header{
+    height: 400px; 
+    width: 100%;
+    margin: 50px;
+    background-image: url("resources/Sockbackground.jpg");
+    
+}
+
+.main-header .h1 {
+    font-size: 3rem;
+    color:white;
+    
+}
+.main-header .h3 {
+    font-size: 1.5rem;
+    color:white;
+    background-color: green;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;  
+    width: 250px;
+}
+
+#orderbutton {
+    color: white;
+}
+#discoverbutton {
+    opacity: 0.8;
+    color: white;
+}
+.trust-bar {
+    justify-content: space-between;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+
+}
+#socialproofbartext {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
